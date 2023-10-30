@@ -2,7 +2,9 @@
 import NavbarItem from './components/NavbarItem.vue';
 import HeroItem from './components/HeroItem.vue';
 import AboutUsItem from './components/AboutUsItem.vue';
-import ProductsItem from './components/ProductsItem.vue';
+import BooksShowcase from './components/BooksShowcase.vue';
+import CategoriesShowcase from './components/CategoriesShowcase.vue';
+import FooterItem from './components/FooterItem.vue';
 
 </script>
 
@@ -14,7 +16,11 @@ import ProductsItem from './components/ProductsItem.vue';
     <!--About us / Conocenos-->
     <AboutUsItem />
     <!--Libros / Products -->
-    <ProductsItem />
+    <BooksShowcase/>
+    <!--Categories / Categorias-->
+    <CategoriesShowcase />
+    <!--Footer-->
+    <FooterItem />
   </main>
 </template>
 
