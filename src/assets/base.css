@@ -91,6 +91,15 @@ body {
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 :root {
+  /*General sizes*/
+  --main-block-item-width: 80%;
+  --main-block-item-max-width: 1200px;
+  --main-block-item-height: 500px;
+  /*Media Query sizes*/
+  --media-query-mobile: 480px;
+  --media-query-tablets: 768px;
+  --media-query-laptops: 1024px;
+  --media-query-desktops: 1200px;
   /*General styles */
   --text: #0a0a0a;
   --backgroud: #fafafa;
