@@ -32,7 +32,7 @@ const example = Array(8).fill(0);
   .container-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: 400px;
     gap: 15px;
     margin-top: 50px;
   }
