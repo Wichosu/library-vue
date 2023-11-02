@@ -93,7 +93,7 @@ body {
 :root {
   /*General sizes*/
   --main-block-item-width: 80%;
-  --main-block-item-max-width: 1200px;
+  --main-block-item-max-width: 1024px;
   --main-block-item-height: 500px;
   /*Media Query sizes*/
   --media-query-mobile: 480px;
@@ -102,12 +102,14 @@ body {
   --media-query-desktops: 1200px;
   /*General styles */
   --text: #0a0a0a;
-  --backgroud: #fafafa;
+  --background: #fafafa;
   /*Navbar Styles*/
   --navbar-background: #2563eb;
   --navbar-text: #f5f5f5;
   /*Hero Styles*/
   --hero-text: #f5f5f5;
+  /*BookCard Styles */
+  --bookcard-background-text: #d1d5db;
 }
 
 *,
