@@ -5,7 +5,6 @@ const openMenu = ref<Boolean>(false);
 
 const toggleMenu = (): void => {
   openMenu.value = !openMenu.value;
-  console.log(openMenu.value)
 }
 
 </script>
@@ -18,7 +17,8 @@ const toggleMenu = (): void => {
       <div class='navbar-logo-container'>
         <img src='../assets/library_logo_white.svg' />
       </div>
-      <ul class='navbar-items' :class="[openMenu ? 'navbar-items-show' : 'navbar-items-hide']">
+      <ul class='navbar-items' :class="{ 'navbar-items-hide': !openMenu}">
+        <li v-on:click='toggleMenu'><i class='bi-x-lg'></i></li>
         <li>Inicio</li>
         <li>Conocenos</li>
         <li>Libros</li>
@@ -44,7 +44,6 @@ const toggleMenu = (): void => {
   font-size: clamp(20px, 1rem, 26px);
   font-weight: 600;
   margin-left: 15px;
-  z-index: 999;
   cursor: pointer;
 }
 
@@ -52,10 +51,14 @@ nav {
   display: flex;
 }
 
+/*
 .navbar-items-hide {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
+*/
+/*
 .navbar-items-show {
   position: absolute;
   top: 0;
@@ -68,11 +71,26 @@ nav {
   background-color: var(--navbar-background);
   color: var(--navbar-text);
   text-align: left;
-  padding-top: 20%;
-}
+}*/
 
 .navbar-items {
   list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--navbar-background);
+  width: 75%;
+  height: 100vh;
+  padding: 50px 0 0 40px;
+  color: var(--navbar-text);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: all ease 400ms;
+}
+
+.navbar-items-hide {
+  transform: translateX(-100%);
 }
 
 .navbar-items li {

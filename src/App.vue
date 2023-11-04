@@ -25,7 +25,4 @@ import FooterItem from './components/FooterItem.vue';
 </template>
 
 <style scoped>
-  main {
-    width: 100vw;
-  }
 </style>
