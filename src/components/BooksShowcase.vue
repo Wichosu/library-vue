@@ -6,7 +6,7 @@ const example = Array(8).fill(0);
 
 <template>
   <div class='container'>
-    <h2>Libros</h2>
+    <h1>Libros</h1>
     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
     <div class='container-cards'>
       <BookCard v-for='(demo, key) in example' :key='key' />
@@ -15,6 +15,12 @@ const example = Array(8).fill(0);
 </template>
 
 <style scoped>
+  .container {
+    width: var(--main-block-item-width);
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+/*
   .container {
     max-width: var(--main-block-item-max-width);
     margin: 0 auto;
@@ -36,4 +42,5 @@ const example = Array(8).fill(0);
     gap: 15px;
     margin-top: 50px;
   }
+  */
 </style>

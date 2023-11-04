@@ -21,6 +21,7 @@
 .bookcard-container {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .bookcard-container-image {
@@ -36,6 +37,7 @@
 .bookcard-container-text {
   flex-shrink: 1;
   background-color: var(--bookcard-background-text);
+  color: var(--bookcard-text);
   padding: 20px 10px;
 }
 

@@ -109,8 +109,9 @@ body {
   /*Hero Styles*/
   --hero-text: #f5f5f5;
   /*BookCard Styles */
-  --bookcard-background-text: #e5e7eb;
-  --bookcard-text-tags: #111827;
+  --bookcard-background-text:#dbeafe;
+  --bookcard-text: #0a0a0a;
+  --bookcard-text-tags: #0a0a0a;
 }
 
 *,
