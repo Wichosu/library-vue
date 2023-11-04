@@ -17,6 +17,7 @@
       center 
       fixed;
     background-size: 100%;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -42,11 +43,11 @@
   }
 
   h1 {
-    font-size: clamp(50px, 4rem, 80px);
+    font-size: clamp(40px, 1rem, 50px);
   }
 
   h5 {
-    font-size: clamp(16px, 1rem, 24px);
+    font-size: clamp(12px, 0.1rem, 16px);
   }
 
   button {
