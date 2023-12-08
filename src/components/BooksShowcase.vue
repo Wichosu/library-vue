@@ -7,7 +7,7 @@ const example = Array(8).fill(0);
 <template>
   <div class='container'>
     <h1>Libros</h1>
-    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <div class='container-cards'>
       <BookCard v-for='(demo, key) in example' :key='key' />
     </div>
